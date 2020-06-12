@@ -1,0 +1,15 @@
+.page-footer {
+    background: url('../images/bg-footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.list-inline-item {
+    cursor: pointer;
+    transition: all .33s;
+
+    &:hover {
+        transform: rotate(360deg)
+    }
+}

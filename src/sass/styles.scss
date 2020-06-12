@@ -1,0 +1,44 @@
+@import './base/mixins';
+@import './base/vars';
+@import './base/fonts';
+
+
+
+body {
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #000000;
+    font-family: 'Rubik', 'Montserrat',sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff ;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// ::selection {
+//     background-color:#52C600;
+// }
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/footer';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
