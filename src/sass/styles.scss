@@ -8,7 +8,12 @@ body {
     font-size: 16px;
     color: #FFFFFF;
     background: #000000;
-    font-family: 'Rubik', 'Montserrat',sans-serif;
+    font-family: 'Muli', 'Poppins', sans-serif;
+    
+}
+
+.container {
+    max-width: 1330px !important;
 }
 
 
@@ -20,6 +25,13 @@ a {
     }
 }
 
+.bg-light {
+    background: none;
+}
+
+
+
+
 // ::selection {
 //     background-color:#52C600;
 // }
@@ -27,6 +39,8 @@ a {
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/footer';
+@import 'blocks/sidebar';
+
 
 
 

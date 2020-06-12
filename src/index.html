@@ -3,157 +3,113 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Siteen</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Rubik:wght@300;500;700&display=swap"
-            rel="stylesheet">
-            <link rel="stylesheet" href="./css/bootstrap.min.css">
-            <link rel="stylesheet" href="./css/styles.min.css">
-        </head>
-        <body>
+        <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;800&family=Poppins:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/styles.min.css">
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
             
-            <header class="header pt-3">
-                <div class="container">
-                    <div class="row d-flex justify-content-between align-items-center">
-                        <div class="col-md-2">
-                            <a href="#" class="logo">
-                                <img class="img-fluid logo-img" src="images/logo_04 1.png" alt="Logo">
-                            </a>
-                        </div>
-                        <div class="col-md-5">
-                            <nav class="nav d-flex justify-content-around">
-                                <a href="">
-                                    Services
+            <!-- Sidebar -->
+            <div class="border-right" id="sidebar-wrapper">
+                <div class="sidebar-heading">Start Bootstrap </div>
+                <!-- <div class="list-group list-group-flush">
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+                </div> -->
+            </div>
+            <!-- /#sidebar-wrapper -->
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <header class="header pt-4">
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-3">
+                                <a href="#" class="logo">
+                                    <img class="logo-img img-fluid" src="images/logo.png" alt="Logo">
                                 </a>
-                                <a href="">
-                                    Cases
-                                </a>
-                                <a href="">
-                                    Contact Us
-                                </a>
-                            </nav>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="contact-block d-flex justify-content-around">
-                                <a href=tel:+380971630202 class="contact-block__tel">
-                                    +38 (097) 163 02 02
-                                </a>
-                                <a href="#" class="contact-block__brif">
-                                    Get a Brif
-                                </a>
+                                
+                            </div>
+                            <div class="col-md-5">
+                                <nav class="nav d-flex justify-content-around">
+                                    <a href="#" class="nav__link">
+                                        Services
+                                    </a>
+                                    <a href="#" class="nav__link">
+                                        Cases
+                                    </a>
+                                    <a href="#" class="nav__link">
+                                        Contact Us
+                                    </a>
+                                </nav>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-block d-flex justify-content-around">
+                                    <a href=tel:+380971630202 class="contact-block__tel">
+                                        +38 (097) 163 02 02
+                                    </a>
+                                    <a href="#" class="contact-block__brif">
+                                        Get a Brif
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </header>
-            <section class="promo">
-                <div class="container">
-                    <div class="row">
-                        
+                    
+                </header>
+                
+                <section class="promo pt-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="promo-block ">
+                                    <div class="agency d-flex align-items-center mt-5">
+                                        <span></span>
+                                        <p class="text-uppercase pl-3">
+                                            Digital Agency
+                                        </p>
+                                    </div>
+                                    <h1 class="promo-block__title d-flex align-items-end" >
+                                    Solutions for Digital Business
+                                    <span class="ml-0 mb-4"></span>
+                                    </h1>
+                                    <p class="">
+                                        We bring your business online and raise the income thanks to our wonderful team of professionals.
+                                    </p>
+                                    <div class="about-us">
+                                        <a href="#">
+                                            <img src="" alt="">
+                                        </a>
+                                        <div class="about-us__block">
+                                            <p class="text-uppercase">
+                                                About Us
+                                            </p>
+                                            <span></span>
+                                            <a class="text-uppercase">
+                                                Promotion Video
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </section>
-            
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/index.js"></script>
-        </body>
-    </html>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Sidebar Nav</a>
-        <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-        aria-controls="navbarCollapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        >
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Item 1</a>
-                </li>
-                <li class="nav-item">
-                    <a
-                        class="nav-link nav-link-collapse"
-                        href="#"
-                        id="hasSubItems"
-                        data-toggle="collapse"
-                        data-target="#collapseSubItems2"
-                        aria-controls="collapseSubItems2"
-                        aria-expanded="false"
-                    >Item 2</a>
-                    <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="nav-link-text">Item 2.1</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="nav-link-text">Item 2.2</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Item 3</a>
-                </li>
-                <li class="nav-item">
-                    <a
-                        class="nav-link nav-link-collapse"
-                        href="#"
-                        id="hasSubItems"
-                        data-toggle="collapse"
-                        data-target="#collapseSubItems4"
-                        aria-controls="collapseSubItems4"
-                        aria-expanded="false"
-                    >Item 4</a>
-                    <ul class="nav-second-level collapse" id="collapseSubItems4" data-parent="#navAccordion">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="nav-link-text">Item 4.1</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="nav-link-text">Item 4.2</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span class="nav-link-text">Item 4.2</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Item 5</a>
-                </li>
-            </ul>
-            <form class="form-inline ml-auto mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-    <main class="content-wrapper">
-        <div class="container-fluid">
-            <h1>Main Content</h1>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="text-center">
-                <span>Coded by <a href="https://si-dev.com/ru">SI-Dev</a>, 2018</span>
+                </section>
+                
             </div>
+            <!-- /#page-content-wrapper -->
         </div>
-    </footer>
+        <!-- /#wrapper -->
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

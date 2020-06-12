@@ -4,4 +4,43 @@
 	background-repeat: no-repeat;
 	height: 120vh;
 	background-position: center right;
+
+	&-block {
+		&__title {
+			font-family: Poppins;
+			font-weight: bold;
+			font-size: 85px;
+
+			span {
+				width: 35px;
+				height: 20px;
+				border-radius: 50%;
+				background-color: #efa249
+			}
+		}
+	}
+}
+
+.agency {
+	span {
+		height: 1px;
+		width: 50px;
+		background-color: white;
+	}
+
+	p {
+
+	}
+}
+
+.about-us {
+	&__block {
+
+		span {
+			display: block;
+			height: 2px;
+			width: 50px;
+			background-color: white;
+		}
+	}
 }
