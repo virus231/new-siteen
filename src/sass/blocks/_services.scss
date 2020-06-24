@@ -1,0 +1,71 @@
+.services {
+	background: url('../images/services-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&-title {
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 53px;
+	}
+
+	&-item {
+		background: linear-gradient(180deg, #1E2129 27.58%, #000000 102.4%);
+		border-radius: 20px;
+		border: none;
+		transition: all .33s;
+
+		&__title {
+			font-family: Muli;
+			font-style: normal;
+			font-weight: 800;
+			font-size: 20px;
+		}
+
+		&:hover {
+			cursor: pointer;
+			box-shadow: 0px 15px 22px 0px rgba(250, 170, 76, 0.3);
+			transform: translateY(-20px);
+		}
+	}
+
+	&-list {
+
+		&__item {
+			font-family: Muli;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+
+		}
+	}
+}
+
+.card-body {
+	// transition: all .33s;
+	&:hover {
+	}
+
+	&__title {
+		font-family: Muli;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 20px;
+	}
+
+	&__text {
+		font-family: Muli;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+	}
+}
+
+.cnt {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 60px;
+	color: rgba(255, 255, 255, 0.3);
+}

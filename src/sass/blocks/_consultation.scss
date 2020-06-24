@@ -1,0 +1,64 @@
+.consultation {
+	position: relative;
+	img {
+		position: relative;
+		z-index: 3;
+	}
+
+	&::before {
+		content: url('../images/figures.svg');
+		display: block;
+		position: absolute;
+		right: 0;
+		top: -450px;
+		z-index: 123;
+	}
+}
+
+
+.main-form {
+	background-color: #191C26;
+	border-radius: 40px 0px 0px 0px;
+
+	input {
+		margin-bottom: 40px;
+		width: 100%;
+	}
+
+	.btn-form {
+		color: white;
+		border-radius: 50px;
+		font-family: Muli;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+	input[type="text"],
+	input[type="number"],
+	input[type="email"] {
+		border: none;
+		background: none;
+		border-bottom: 2px solid white;
+		outline: none;
+		color: white;
+		font-size: 22px;
+
+	}
+
+	textarea {
+		background: none;
+		border: none;
+		border-left: 2px solid white;
+		outline: none;
+	}
+
+	.number {	
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 60px;
+		color: rgba(255, 255, 255, 0.1)
+	}
+
+}

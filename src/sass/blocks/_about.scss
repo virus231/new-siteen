@@ -1,0 +1,27 @@
+.about {
+	background: url('../images/about-bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.how-block {
+	h2 {
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 60px;
+		color: #2B2C31;
+	}
+}
+
+.how-item {
+	h4 {
+		transition: all .33s;
+
+		&:hover {
+			color: #BE76D7;
+			cursor: pointer;
+		}
+	}
+}

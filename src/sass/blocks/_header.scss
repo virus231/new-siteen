@@ -1,13 +1,13 @@
 .header {
     position: absolute;
     top: 0;
-    left: 180px;
+    left: 0;
     right: 0;
-    width: 90%;
+    width: 100%;
 
     .logo {
         &-img {
-            max-width: 100%;
+            max-width: 55%;
         }
   }
 }
@@ -19,6 +19,32 @@
     font-size: 16px;
     color: #FAA94C;
     transition: all .33s;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.contact-block {
+  &__tel {
+    transition: all .33s;
+
+    &:hover {
+      color: #FABE44;
+    }
+  }
+
+  &__brif {
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    transition: all .33s;
+    // background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    background-image: linear-gradient(to right, #FA446E 4%, #FABE44 100%);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+    border: none;
 
     &:hover {
       color: white;

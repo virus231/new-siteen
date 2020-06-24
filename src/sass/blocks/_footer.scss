@@ -1,15 +1,32 @@
-.page-footer {
-    background: url('../images/bg-footer.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+.footer {
+	background: url('../images/footer-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: center; 
 
+	&-info {
+		p {
+			font-family: Muli;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			span {
+				font-family: Poppins;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+			}
+		}
+	}
+
+	&-logo {
+		max-width: 85%;
+	}		
 }
 
-.list-inline-item {
-    cursor: pointer;
-    transition: all .33s;
-
-    &:hover {
-        transform: rotate(360deg)
-    }
+.line {
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #ff7234b3;
 }
