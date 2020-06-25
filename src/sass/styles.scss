@@ -4,6 +4,7 @@
 
 
 
+
 body {
     font-size: 16px;
     color: #FFFFFF;
@@ -16,6 +17,9 @@ body {
     max-width: 1330px !important;
 }
 
+ul,li {
+    list-style-type: none;
+}
 
 a {
     text-decoration: none;
@@ -23,6 +27,49 @@ a {
     &:hover {
         text-decoration: none;
     }
+}
+
+.bg-light {
+    background: none;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #FA446E 4%, #FABE44 100%);
+    border-radius: 30px;
+}
+
+.btn-gradient {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+a.active {
+    color: white;
+    border-bottom: 3px solid #DD4242;
 }
 
 .bg-light {

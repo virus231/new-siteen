@@ -19,6 +19,7 @@
     font-size: 16px;
     color: #FAA94C;
     transition: all .33s;
+    z-index: 999;
 
     &:hover {
       color: white;
@@ -45,6 +46,7 @@
     background-image: linear-gradient(to right, #FA446E 4%, #FABE44 100%);
     box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
     border: none;
+    border-radius: 40px;
 
     &:hover {
       color: white;

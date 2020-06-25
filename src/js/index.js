@@ -1,4 +1,5 @@
 
+
 $(document).ready(function() {
   $('.nav-toggle').click(function() {
     var collapse_content_selector = $(this).attr('href');
@@ -12,3 +13,4 @@ $(document).ready(function() {
     });
   });
 });
+// Your jQuery code

@@ -30,3 +30,13 @@
 	height: 2px;
 	background-color: #ff7234b3;
 }
+
+.social-links {
+	.social__link {
+		transition: all .33s;
+
+		&:hover {
+			transform: rotate(360deg);
+		}
+	}
+}
