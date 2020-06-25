@@ -20,22 +20,6 @@
 		border-bottom: 3px solid red;
 	}
 
-
-	// &:after {
-	//     border-bottom: 3px solid #DD4242;
-	//     content: "";
-	//     display: block;
-	//     margin: 0.50em auto 0;
-	//     transition: width 330ms ease-in-out 0s;
-	//     width: 0;
-	// }
-
-
-	// &:hover:after {
-	// 	transition: width 150ms ease-in-out 0s;
- //    	width: 100%;
-	// }
-
 }
 
 .nav-toggle {
@@ -66,11 +50,13 @@
 	top: 0;
 	left: 15px;
 	right:0;
+	bottom: 0;
 	height: 100%;
-	max-width: 100%;
+	max-width: 95.5%;
 	opacity: 0;
 	cursor: pointer;
 	transition: all .44s;
+	padding: 60px;
 
 	&:hover {
 		opacity: 1;

@@ -18,10 +18,16 @@
 .how-item {
 	h4 {
 		transition: all .33s;
-
-		&:hover {
-			color: #BE76D7;
-			cursor: pointer;
+		
+		a {
+			background-color: none;
+			font-size: 26px;
+			&:hover {
+				color: #BE76D7;
+				cursor: pointer;
+			}
 		}
+
+		
 	}
 }

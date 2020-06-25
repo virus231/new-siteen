@@ -19,16 +19,39 @@
             font-family: Poppins;
             font-weight: bold;
             font-size: 85px;
+            position: relative;
 
             span {
-                width: 35px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 25px;
                 margin-right: 35px;
-                height: 20px;
+                height: 25px;
                 border-radius: 50%;
                 background-color: #efa249
             }
         }
     }
+}
+
+@media (max-width: 1428px) {
+    .promo-block__title {
+        width: 65%;
+
+        span {
+            // width: 60px;
+        }
+    }
+}
+
+@media (max-width: 1340px) {
+    .promo-block__title {
+        span {
+            display: none;
+        }
+    }
+
 }
 
 .agency {
