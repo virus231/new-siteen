@@ -1,13 +1,13 @@
 .header {
     position: absolute;
     top: 0;
-    left: 170px;
+    left: 240px;
     right: 0;
     width: 80%;
 
     .logo {
         &-img {
-            max-width: 55%;
+            // max-width: 55%;
         }
   }
 }
@@ -37,6 +37,7 @@
   }
 
   &__brif {
+    display: inline-block;
     font-family: Muli;
     font-style: normal;
     font-weight: 800;
@@ -51,5 +52,51 @@
     &:hover {
       color: white;
     }
+  }
+}
+
+
+@media screen and (max-width: 1199px) {
+  .header {
+    left: 15% !important
+  }
+  .header-wrapper {
+    flex-direction: column;
+  }
+
+  .logo {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+
+  .nav {
+    margin-bottom:  30px;
+  }
+
+  .contact-block {
+    margin-bottom:  30px;
+    a {
+      width: 100%;
+    }
+
+    button {
+      font-size:  16px;
+      padding: 10px 15px !important
+    }
+  }
+
+  .promo-block {
+    transform: translateY(-40%) !important;
+
+    &__title {
+      width: 100% !important;
+      font-size:  60px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo-img {
+    max-width: 40%;
   }
 }
