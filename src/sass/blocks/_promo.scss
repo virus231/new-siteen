@@ -13,6 +13,11 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        padding-left: 25px;
+
+        &.active {
+            display: none;
+        }
 
 
         &__title {
@@ -31,6 +36,8 @@
                 border-radius: 50%;
                 background-color: #efa249
             }
+
+            
         }
     }
 }

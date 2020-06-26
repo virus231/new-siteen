@@ -2,8 +2,8 @@
   background: url('../images/Menu.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  // position: fixed;
-  height: 120vh;
+  position: fixed;
+  height: 100vh;
   margin-left: -15rem;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
@@ -32,15 +32,22 @@
 .sidebar-menu {
   height: 80vh;
   padding-top: 275px;
+
   &__link {
     display: block;
     // transform: rotate(-90deg);
-    writing-mode:tb-rl;
+    writing-mode: tb-rl;
     // margin: 100px 0;
     font-family: Muli;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
+    transition: all .33s;
+    ;
+
+    &:hover {
+      color: #FAA94C;
+    }
   }
 
   .line {
@@ -48,15 +55,14 @@
     height: 50px;
     background-color: white;
     display: block;
-    writing-mode:tb-rl;
-    margin-left: 60px !important; 
+    writing-mode: tb-rl;
+    margin-left: 60px !important;
   }
 }
 
 
-
 .hamburger {
-  // position: fixed;
+  position: fixed;
   top: 32px;
   left: 16px;
   z-index: 99;
@@ -75,7 +81,8 @@
     width: 32px;
     height: 2px;
 
-    &:after, &:before {
+    &:after,
+    &:before {
       content: '';
       transition: all .33s;
       display: block;
@@ -83,32 +90,28 @@
       width: 24px;
       height: 2px;
       background-color: #fff;
-      // left: 4px;
+      left: 4px;
     }
-      
+
     &:after {
       top: -6px;
-      width: 32px;
-
     }
+
     &:before {
       bottom: -6px;
-      width: 32px;
-    
     }
   }
-    
-   
 
-    
   &.active {
     span {
       background-color: transparent;
-      &:after, &:before {
+
+      &:after,
+      &:before {
         top: 0;
         bottom: 0;
       }
-        
+
       &:after {
         transform: rotate(-45deg);
       }
@@ -120,6 +123,34 @@
   }
 }
 
+
+menu {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 98;
+  transition: all .33s;
+  left: -100%;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  // background-color: #030012;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &.active {
+    left: 0;
+  }
+
+  a {
+    margin: 16px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
 
 @media (min-width: 768px) {
   #sidebar-wrapper {

@@ -1,18 +1,30 @@
 .header {
-    position: absolute;
-    top: 0;
-    left: 240px;
-    right: 0;
-    width: 80%;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 0;
+  width: 80%;
 
-    .logo {
-        &-img {
-            // max-width: 55%;
-        }
+  .logo {
+    &-img {
+      // max-width: 55%;
+    }
+
+    &.active {
+      display: none;
+    }
   }
 }
 
 .nav {
+  &-menu {
+    &.active {
+      opacity: 0;
+    }
+  }
+
+  
+
   &__link {
     font-family: Muli;
     font-weight: normal;
@@ -20,6 +32,9 @@
     color: #FAA94C;
     transition: all .33s;
     z-index: 999;
+
+    
+    
 
     &:hover {
       color: white;
@@ -60,6 +75,7 @@
   .header {
     left: 15% !important
   }
+
   .header-wrapper {
     flex-direction: column;
   }
@@ -70,17 +86,18 @@
   }
 
   .nav {
-    margin-bottom:  30px;
+    margin-bottom: 30px;
   }
 
   .contact-block {
-    margin-bottom:  30px;
+    margin-bottom: 30px;
+
     a {
       width: 100%;
     }
 
     button {
-      font-size:  16px;
+      font-size: 16px;
       padding: 10px 15px !important
     }
   }
@@ -90,7 +107,7 @@
 
     &__title {
       width: 100% !important;
-      font-size:  60px !important;
+      font-size: 60px !important;
     }
   }
 }
