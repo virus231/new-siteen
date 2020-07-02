@@ -1,8 +1,8 @@
 .experience {
-    background: url('../images/tech-bg.svg');
+    background: url('../images/bg-techno.svg');
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: center;
+    background-position-y: top;
 }
 
 .tehno-block {
@@ -20,3 +20,15 @@
         font-size: 20px;
     }
 }
+
+.front,
+.backend {
+    h4 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        color: rgba(190, 118, 215, 0.3);
+    }
+}
+
