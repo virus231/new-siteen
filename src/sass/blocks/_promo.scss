@@ -78,6 +78,10 @@
             font-style: normal;
             font-weight: normal;
             font-size: 13px;
+            
+            a {
+                color: white;
+            }
         }
 
         span {
@@ -167,5 +171,11 @@
     100% {
         transform: scale(1.1);
         opacity: 0;
+    }
+}
+
+@media screen and (max-width: $screen-sm-max) {
+    .promo-block {
+        padding-left: 0 !important;
     }
 }

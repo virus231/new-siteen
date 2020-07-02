@@ -37,6 +37,13 @@ body {
     padding-left: 0 !important;
 }
 
+@media screen and (max-width: $screen-md-max) {
+    .container-fluid {
+        padding-left: 15px !important;
+    }
+}
+
+
 ul,li {
     list-style-type: none;
 }
@@ -51,6 +58,15 @@ a {
 
 main {
     padding: 0 !important;
+
+    &.active {
+        display: none;
+    }
+}
+
+.navbar {
+    height: 100vh;
+    padding: 0;
 }
 
 aside {
@@ -154,6 +170,13 @@ a.active {
 @import 'blocks/services';
 @import 'blocks/footer';
 @import 'blocks/sidebar';
+@import 'blocks/intro';
+@import 'blocks/experience';
+@import 'blocks/experience';
+@import 'blocks/team';
+
+
+
 
 
 

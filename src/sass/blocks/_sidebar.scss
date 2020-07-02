@@ -4,6 +4,7 @@
   background-size: cover;
   position: fixed;
   height: 100vh;
+  z-index: 12;
   margin-left: -15rem;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
@@ -64,7 +65,7 @@
 .hamburger {
   position: fixed;
   top: 32px;
-  left: 16px;
+  left: 28px;
   z-index: 99;
   cursor: pointer;
   width: 32px;
@@ -124,6 +125,7 @@
 }
 
 
+
 menu {
   margin: 0;
   padding: 0;
@@ -152,9 +154,16 @@ menu {
   }
 }
 
+@media screen and (max-width: $screen-lg-max) {
+  .hamburger {
+    left: 10px;
+  }
+}
+
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
+    max-width: 10%;
   }
 
   #page-content-wrapper {

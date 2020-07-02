@@ -31,3 +31,54 @@
 		
 	}
 }
+
+.view-site {
+	-webkit-font-smoothing: subpixel-antialiased;
+	--ui-icon-size-xs: 26px;
+	--ui-icon-size-sm: 31px;
+	--ui-icon-size-md: 39px;
+	--ui-icon-size-lg: 47px;
+	--ui-icon-size: 39px;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 1;
+	text-transform: uppercase;
+	text-align: left;
+	color: #DD4242;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 15px;
+	cursor: pointer;
+	display: inline-block;
+
+	svg {
+		width: 16px;
+		height: 12px;
+	}
+}
+
+.line-portfolio {
+	height: 1px;
+	background: rgba(255,255,255,.2);
+	position: relative;
+	width: 75%;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 69px;
+		height: 1px;
+		background-color: red;
+		display: inline-block;
+		top: 0;
+		transition: width 1s;
+	}
+}
+
+
+@media screen and (max-width: $screen-md-max) {
+	.about {
+		background-position: right;
+	}
+}

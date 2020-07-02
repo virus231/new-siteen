@@ -1,0 +1,78 @@
+
+.team {
+    background-color: #191C26;
+
+    &-team {
+        h2 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 60px;
+        }
+
+        p {
+            font-family: Muli;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+        }
+    }
+
+    &-slider {
+        &__item {
+            cursor: pointer;
+            right: 20px;
+            z-index: 9999;
+            img {
+                display: inline-block;
+                margin: 0 70px;
+                transition: all .33s;
+                z-index: 9999;
+                filter: grayscale(1);
+                position: relative;
+
+                &:hover {
+                    transform: translateY(-20px);
+                    filter: saturate(1);
+                }
+
+            }
+
+            
+        }
+    }
+
+}
+
+.arrows-control {
+    .arrow{
+        width: 32px;
+    }
+
+    a {
+        transition: all .33s;
+
+        &:hover {
+            color: #DD4242;
+
+        }
+    }
+
+    .prev,
+    .next {
+        border: none;
+        background: none;
+        color: white
+    }
+    .next span,
+    .prev span {
+        font-family: Muli;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+
+        &:hover  {
+            color: #DD4242;
+        }
+    }
+}

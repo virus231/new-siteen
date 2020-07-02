@@ -41,3 +41,48 @@
 		}
 	}
 }
+
+.everywhere {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+@media screen and (max-width: $screen-md-max) {
+	.footer {
+		background: url("../images/footer-md-bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: bottom;
+
+		&-logo {
+			max-width: 30%;
+		}
+	}
+
+	.nav__link {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: $screen-xs-max) {
+	.social-links {
+		flex-wrap: wrap;
+
+		a {
+			margin-top: 15px;
+		}
+	}
+
+	.footer-info {
+		span {
+			display: none;
+		}
+
+		p {
+			font-size: 19px !important;
+		}
+	}
+}

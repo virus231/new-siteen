@@ -70,6 +70,104 @@
   }
 }
 
+.contact-block-sm {
+  img {
+    display: inline-block;
+    border-right: 0.5px solid rgba(255, 255, 255, 0.44);;
+  }
+}
+
+.hamburger-sm {
+  position: fixed;
+  top: 3%;
+  right: 15px;
+  z-index: 99;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    transition: all .33s;
+    position: relative;
+    display: block;
+    background-color: #fff;
+    width: 32px;
+    height: 2px;
+
+    &:after, &:before {
+      content: '';
+      transition: all .33s;
+      display: block;
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background-color: #fff;
+      left: 4px;
+    }
+      
+    &:after {
+      top: -6px;
+    }
+    &:before {
+      bottom: -6px;
+    }
+  }
+    
+   
+
+    
+  &.active {
+    span {
+      background-color: transparent;
+      &:after, &:before {
+        top: 0;
+        bottom: 0;
+      }
+        
+      &:after {
+        transform: rotate(-45deg);
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+.link-group-sm {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 98;
+    transition: all .33s;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: url("../images/menu-bg-sm.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  &.active {
+    right: 0;
+  }
+
+  a {
+    margin: 16px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
 
 @media screen and (max-width: 1199px) {
   .header {
@@ -82,11 +180,11 @@
 
   .logo {
     display: inline-block;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
 
   .nav {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
 
   .contact-block {
@@ -113,7 +211,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    left: 0 !important;
+  }
+
   .logo-img {
-    max-width: 40%;
+    max-width: 100%;
+  }
+
+  .nav {
+    display: none !important;
   }
 }
