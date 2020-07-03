@@ -183,6 +183,12 @@
   }
 }
 
+.menu-mobile {
+  // background: url("../images/bg-fixed.png");
+  // background-repeat: no-repeat;
+  // position: fixed;
+}
+
 @media screen and (max-width: 1199px) {
   .header {
     left: 15% !important
@@ -239,7 +245,7 @@
     max-width: 100%;
   }
 
-  .nav {
+  .nav-menu .nav {
     display: none !important;
   }
 }

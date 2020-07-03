@@ -77,3 +77,9 @@
 	font-size: 60px;
 	color: rgba(255, 255, 255, 0.3);
 }
+
+@media screen and (max-width: $screen-md-max) {
+	.services {
+		background-position: center right;
+	}
+}
