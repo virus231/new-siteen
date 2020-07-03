@@ -82,3 +82,9 @@
 		background-position: right;
 	}
 }
+
+.show-block {
+	// display: none;
+	transition: all .33s;
+	opacity: 0;
+}

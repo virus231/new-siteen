@@ -68,6 +68,8 @@
       color: white;
     }
   }
+
+  
 }
 
 .contact-block-sm {
@@ -79,9 +81,9 @@
 
 .hamburger-sm {
   position: fixed;
-  top: 3%;
+  top: 2%;
   right: 15px;
-  z-index: 99;
+  z-index: 999;
   cursor: pointer;
   width: 32px;
   height: 32px;
@@ -161,13 +163,25 @@
   }
 
   a {
-    margin: 16px;
+    margin: 10px;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    
   }
 }
 
+.lang {
+  a {
+    border-bottom: 2px solid white;
+    transition: all .33s;
+    font-size: 20px;
+
+    &:hover {
+      color: orangered
+    }
+  }
+}
 
 @media screen and (max-width: 1199px) {
   .header {
@@ -210,6 +224,12 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .contact-block a {
+    width: auto !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header {
     left: 0 !important;
@@ -221,5 +241,11 @@
 
   .nav {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: $screen-xs-max) {
+  .hamburger-sm {
+    top: 2.5%;
   }
 }
